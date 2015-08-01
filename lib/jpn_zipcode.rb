@@ -15,7 +15,7 @@ module JpnZipcode
 		end
 
 		def find_zip(zipcode, zip_hash)
-			address = zip_hash[:zipcode]
+			address = zip_hash[:zipcode].to_s
 			if address.is_a? String
 				return address
 			else
