@@ -9,10 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Etsuro Yoshino"]
   spec.email         = ["a1549ey@aiitac.jp"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.summary       = %q{"get address from 7 numbers"}
+  spec.description   = %q{"put paramater 7 number in strings"}
+  spec.homepage      = "http://aiit.ac.jp/"
+  spec.license       = "AIIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
