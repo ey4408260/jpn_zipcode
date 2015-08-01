@@ -15,8 +15,12 @@ module JpnZipcode
 		end
 
 		def find_zip(zipcode, zip_hash)
-			address = zip_hash[:zipcode].to_s
-			return address
+			address = zip_hash[zipcode]
+			if address.is_a? String
+				return address
+			else
+				return ""
+			end
 		end
 
 		def get_address(num)
