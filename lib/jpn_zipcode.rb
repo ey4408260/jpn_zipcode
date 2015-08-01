@@ -1,4 +1,4 @@
-qrequire "jpn_zipcode/version"
+require "jpn_zipcode/version"
 
 module JpnZipcode
 	class Main
