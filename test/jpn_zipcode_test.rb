@@ -19,8 +19,10 @@ class JpnZipcodeTest < Minitest::Test
        assert_equal "", @main.fmt_input("12345678"), 'NG'
     end
 
- #   def fnd_zip
- #       
- #       assert_equal @main.fnd_zip('1234567'),''
- #   end
+    def test_find_zip()
+      hash = {}
+      hash["1234567"] = "TOKYO"       
+      assert_equal "TOKYO", @main.find_zip("1234567", hash)
+      assert_equal "", @main.find_zip("0000000", hash)
+    end
 end
