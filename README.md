@@ -1,4 +1,5 @@
 # JpnZipcode
+https://rubygems.org/gems/jpn_zipcode
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jpn_zipcode`. To experiment with that code, run `bin/console` for an interactive prompt.
 
@@ -22,7 +23,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+'''
+$ irb
+irb(main):001:0> require 'jpn_zipcode'
+=> true
+irb(main):002:0> @main = ::JpnZipcode::Main.new
+=> #<JpnZipcode::Main:0x007f13c888c970>
+irb(main):003:0> @main.get_address('1400002')
+=> "1400002,東京都,品川区,東品川,TOKYO TO,SHINAGAWA KU,HIGASHISHINAGAWA\n"
+irb(main):004:0> @main.get_address('140-0002')
+=> "1400002,東京都,品川区,東品川,TOKYO TO,SHINAGAWA KU,HIGASHISHINAGAWA\n"
+irb(main):005:0> @main.get_address('1400002')
+=> "1400002,東京都,品川区,東品川,TOKYO TO,SHINAGAWA KU,HIGASHISHINAGAWA\n"
+'''
 
 ## Development
 
