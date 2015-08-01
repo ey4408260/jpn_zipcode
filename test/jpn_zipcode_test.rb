@@ -7,5 +7,6 @@ class JpnZipcodeTest < Minitest::Test
 
   def test_it_does_something_useful
     assert false
+    put "hi"
   end
 end
