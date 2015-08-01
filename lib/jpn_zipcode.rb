@@ -1,4 +1,4 @@
-require "jpn_zipcode/version"
+qrequire "jpn_zipcode/version"
 
 module JpnZipcode
 	class Main
@@ -9,6 +9,15 @@ module JpnZipcode
 			elsif zipcode.to_s =~ /^\d{3}-\d{4}$/
 				zipcode = zipcode.delete("-")
 				return zipcode
+			else
+				return ""
+			end
+		end
+
+		def find_zip(zipcode, zip_hash)
+			address = zip_hash[:zipcode]
+			if address.is_a?
+				return address
 			else
 				return ""
 			end
