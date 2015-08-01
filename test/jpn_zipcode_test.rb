@@ -13,10 +13,10 @@ class JpnZipcodeTest < Minitest::Test
  #  assert false
  # end
    def test_fmt_input
-       assert_equal @main.fmt_input('1234567'), '1234567', 'OK'
-       assert_equal @main.fmt_input('123‐4567'), '1234567', 'OK'
-       assert_equal @main.fmt_input(1), "", 'NG'
-       assert_equal @main.fmt_input(12345678), "", 'NG'
+       assert_equal '1234567', @main.fmt_input('1234567'), 'OK'
+       assert_equal '1234567', @main.fmt_input('123-4567'), 'OK'
+       assert_equal "", @main.fmt_input('1'), 'NG'
+       assert_equal "", @main.fmt_input("12345678"), 'NG'
     end
 
  #   def fnd_zip
