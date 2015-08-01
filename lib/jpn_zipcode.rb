@@ -34,7 +34,7 @@ module JpnZipcode
 				return ""
 			end
 			return find_zip(postnum,phash)	
-  		def
+		end
 
 	end
 
